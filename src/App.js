@@ -5,7 +5,7 @@ import Invite from './page/Invite';
 import CodeVerification from './page/CodeVerification';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import AllowNotification from './page/AllowNotification';
-import Home from './components/Home';
+import Home from './page/Home';
 
 function App() {
   return (

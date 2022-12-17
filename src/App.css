@@ -7,10 +7,20 @@
   font-family: "Neutrif Pro";
 }
 
+html{
+  overflow-x: hidden; 
+}
+
 :root {
-  --bgColorVar: #f1efe3;
+  --bgColorVar: #f2f0e4;
   --blueTextVar: rgb(47 128 237);
   --brownTextVar: rgb(161, 128, 88);
+  --homebtnBg: #28ae61;
+}
+
+@font-face {
+  font-family: 'Neutrif Pro';
+  src: local('Neutrif Pro'), url(./fonts/NeutrifPro-Light.ttf) format('truetype');
 }
 
 a{
@@ -18,4 +28,8 @@ a{
 }
 a:hover{
   text-decoration: none !important;
+}
+
+.random{
+  background: rgb(87, 183, 127);
 }
