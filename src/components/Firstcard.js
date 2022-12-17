@@ -31,6 +31,7 @@ const Wrap = styled.div`
   flex-direction: column;
   background: #e8e4d1;
   border-radius: 25px;
+  box-shadow: 5px 3px 10px 1px lightgrey;
 `;
 const InnerWrap = styled.div`
   display: flex;

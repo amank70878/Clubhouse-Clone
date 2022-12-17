@@ -9,6 +9,8 @@
     "ant-design": "^1.0.0",
     "antd": "^5.0.7",
     "bootstrap": "^5.2.3",
+    "firebase": "^9.15.0",
+    "firebase-tools": "^11.18.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
@@ -24,7 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fiirebase": "firebase init",
+    "fiirebaseL": "firebase login",
+    "fiirebaseD": "firebase deploy"
   },
   "eslintConfig": {
     "extends": [

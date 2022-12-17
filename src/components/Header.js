@@ -1,20 +1,20 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const Header = () => {
   return (
     <Wrap>
       <LeftNav>
-        <img src="./images/search.png" alt="" />
+        <Link to='/explore'>
+          <img src="./images/search.png" alt="" />
+        </Link>
       </LeftNav>
       <RightNav>
         <img src="./images/invite.png" alt="" />
         <img src="./images/calendar.png" alt="" />
         <img src="./images/noti.png" alt="" />
-        <div className='profileDiv'>
-
-        {/* <img src="./images/profile.jpg" alt="" /> */}
-        </div>
+        <Link to='/profile'><div className='profileDiv'></div></Link>
       </RightNav>
     </Wrap>
   )
@@ -33,9 +33,7 @@ const Wrap = styled.div`
     height: 40px;
   }
 `
-const LeftNav = styled.div`
-
-`
+const LeftNav = styled.div``
 const RightNav = styled.div`
   display: flex;
   flex-direction: row;

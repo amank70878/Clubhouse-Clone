@@ -39,7 +39,7 @@ const Wrap = styled.div`
       flex-direction: column;
       align-items: center;
       padding-top: 40px; 
-      height: "350px", 
+      padding-bottom: 10px; 
 `
 const Line = styled.div`
       width: 100px;
@@ -67,6 +67,7 @@ const Globaldiv = styled.div`
       border-bottom: 2px solid grey;
       .active{
             background: rgba(147, 216, 213, 0.545);
+            box-shadow: 8px 5px 10px 1px lightgrey;
       }
       button{
             padding: 13px 30px;

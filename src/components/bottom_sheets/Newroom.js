@@ -145,6 +145,7 @@ const Cards = styled.div`
     background-size: cover;
     border-radius: 30px;
     position: relative;
+    box-shadow: 7px 5px 10px 1px lightgrey;
   }
   .imgMic {
     position: absolute;

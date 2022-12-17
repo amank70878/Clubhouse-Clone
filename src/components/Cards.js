@@ -66,6 +66,7 @@ const InnerWrap = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
+  box-shadow: 6px 5px 10px 1px lightgrey;
 `;
 const Titlewrap = styled.div`
   h3 {

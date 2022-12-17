@@ -6,6 +6,8 @@ import CodeVerification from './page/CodeVerification';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import AllowNotification from './page/AllowNotification';
 import Home from './page/Home';
+import Explore from './page/Explore';
+import Profile from './page/Profile';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route exact path="/codeVerification" element={<CodeVerification /> } />
         <Route exact path="/allowNotification" element={<AllowNotification /> } />
         <Route exact path="/home" element={<Home /> } />
+        <Route exact path="/explore" element={<Explore /> } />
+        <Route exact path="/profile" element={<Profile /> } />
       </Routes>
     </Router>
     </>

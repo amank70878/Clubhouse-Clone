@@ -6,8 +6,8 @@ import Header from "../components/Header";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import data from "../data/roomCard.json";
-import Bottomsheet from '../components/Bottomsheet'
-import newRoomData from '../data/newRoom.json'
+import Bottomsheet from "../components/Bottomsheet";
+import newRoomData from "../data/newRoom.json";
 
 const Home = (props) => {
   // eslint-disable-next-line
@@ -20,10 +20,14 @@ const Home = (props) => {
 
   return (
     <>
-    {loaderVisibility ? (
-    <Loaderdiv><img src="./images/loader.gif" alt="loader" /></Loaderdiv>
-    ) : ('')}
-    <Wrap>
+      {loaderVisibility ? (
+        <Loaderdiv>
+          <img src="./images/loader.gif" alt="loader" />
+        </Loaderdiv>
+      ) : (
+        ""
+      )}
+      <Wrap>
         <Header />
         <h2 className="mt-4 text-center">
           We designed Clubhouse with the belief that people are at the center of
@@ -33,7 +37,7 @@ const Home = (props) => {
         <Cards />
         <Startroom>
           <div className="btnSpan">
-            <button className="btn1" onClick={()=> setSheetVisible(true)}>
+            <button className="btn1" onClick={() => setSheetVisible(true)}>
               <AiOutlinePlus className="mx-2" />
               Start a room
             </button>
@@ -42,8 +46,9 @@ const Home = (props) => {
             </button>
           </div>
         </Startroom>
-        <Bottomsheet  sheetTitle='start room'
-          setSheetVisible={(item)=> setSheetVisible(item)}
+        <Bottomsheet
+          sheetTitle="start room"
+          setSheetVisible={(item) => setSheetVisible(item)}
           sheetVisible={sheetVisible}
           cardDetail={data.find((item) => item.id === cardId)}
           setItemsVisible={(item) => setItemsVisible(item)}
@@ -55,11 +60,12 @@ const Home = (props) => {
             }, 1000);
           }}
         />
-        <Bottomsheet  sheetTitle = 'new room'
+        <Bottomsheet
+          sheetTitle="new room"
           setSheetVisible={(item) => setSheetCreateRoom(item)}
           sheetVisible={sheetCreateRoom}
           cardDetail={newRoomData}
-          setItemsVisible={(item)=> setItemsVisible(item)}
+          setItemsVisible={(item) => setItemsVisible(item)}
         />
       </Wrap>
     </>
@@ -67,7 +73,6 @@ const Home = (props) => {
 };
 
 export default Home;
-
 
 const Wrap = styled.div`
   padding: 0px 100px;
@@ -77,6 +82,7 @@ const Wrap = styled.div`
   flex-direction: column;
   color: var(--brownTextVar);
   background: var(--bgColorVar);
+  padding-bottom: 70px;
 `;
 const Loaderdiv = styled.div`
   position: absolute;
@@ -87,11 +93,11 @@ const Loaderdiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  img{
+  img {
     width: 100px;
     height: 100px;
   }
-`
+`;
 const Startroom = styled.div`
   width: 100vw;
   height: 20vh;
