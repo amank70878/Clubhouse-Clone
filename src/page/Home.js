@@ -29,16 +29,12 @@ const Home = (props) => {
       )}
       <Wrap>
         <Header />
-        <h2 className="mt-4 text-center">
-          We designed Clubhouse with the belief that people are at the center of
-          every moment.
-        </h2>
         <Firstcard />
         <Cards />
         <Startroom>
           <div className="btnSpan">
             <button className="btn1" onClick={() => setSheetVisible(true)}>
-              <AiOutlinePlus className="mx-2" />
+              <AiOutlinePlus />
               Start a room
             </button>
             <button className="btn2">
@@ -83,6 +79,23 @@ const Wrap = styled.div`
   color: var(--brownTextVar);
   background: var(--bgColorVar);
   padding-bottom: 70px;
+  overflow-x: hidden;
+  @media screen and (max-width: 1024px) {
+    padding: 0px 60px;
+    padding-bottom: 70px;
+  }
+  @media screen and (max-width: 680px) {
+    padding: 0px 30px;
+    padding-bottom: 70px;
+  }
+  @media screen and (max-width: 470px) {
+    padding: 0px 10px;
+    padding-bottom: 70px;
+  }
+  @media screen and (max-width: 300px) {
+    padding: 0px;
+    padding-bottom: 70px;
+  }
 `;
 const Loaderdiv = styled.div`
   position: absolute;
@@ -106,13 +119,19 @@ const Startroom = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+  @media screen and (max-width: 600px) {
+    height: 15vh;
+  }
   .btnSpan {
     position: absolute;
-    top: 60%;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
     align-items: center;
+  }
+  @media screen and (max-width: 350px) {
+    width: 100%;
   }
   .btn1 {
     margin: 0 10px;
@@ -121,15 +140,54 @@ const Startroom = styled.div`
     outline: none;
     border: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 14px;
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
+    @media screen and (max-width: 800px) {
+      font-size: 17px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 15px;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 0.8em;
+      padding: 8px 12px;
+    }
+    @media screen and (max-width: 420px) {
+      padding: 8px 8px;
+      border-radius: 10px;
+      width: 140px;
+    }
   }
   .btn1 > svg {
+    margin: 0 10px;
     margin-top: -9px;
+    font-weight: 800;
     width: 30px;
     height: 30px;
+    @media screen and (max-width: 800px) {
+      margin-top: -2px;
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (max-width: 550px) {
+      margin-top: -2px;
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (max-width: 460px) {
+      margin-top: -2px;
+      width: 16px;
+      height: 16px;
+    }
+    @media screen and (max-width: 420px) {
+      margin: 0;
+      margin-right: 5px;
+      margin-top: -2px;
+    }
   }
   .btn2 {
     margin: 0 10px;
@@ -140,5 +198,17 @@ const Startroom = styled.div`
   .btn2 > svg {
     width: 30px;
     height: 30px;
+    @media screen and (max-width: 800px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (max-width: 460px) {
+      width: 22px;
+      height: 22px;
+    }
   }
 `;

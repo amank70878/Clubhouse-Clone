@@ -86,6 +86,9 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  @media screen and (max-width: 400px) {
+    padding: 13px 20px;
+  }
   img {
     width: 20px;
     height: 20px;
@@ -97,6 +100,12 @@ const Header = styled.div`
       height: 30px;
       margin: 0 15px;
       cursor: pointer;
+      @media screen and (max-width: 600px) {
+        width: 26px;
+        height: 26px;
+        margin: 0;
+        margin-left: 20px;
+      }
     }
   }
 `;

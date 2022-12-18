@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
-  font-family: "Neutrif Pro";
+  font-family: 'Manrope', sans-serif;
 }
 
 html{
@@ -13,14 +14,9 @@ html{
 
 :root {
   --bgColorVar: #f2f0e4;
-  --blueTextVar: rgb(47 128 237);
+  --blueTextVar: rgb(40, 116, 209);
   --brownTextVar: rgb(161, 128, 88);
   --homebtnBg: #28ae61;
-}
-
-@font-face {
-  font-family: 'Neutrif Pro';
-  src: local('Neutrif Pro'), url(./fonts/NeutrifPro-Light.ttf) format('truetype');
 }
 
 a{

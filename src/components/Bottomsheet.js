@@ -13,9 +13,9 @@ const Swipebottom = (props) => {
           props.setSheetVisible(!props.sheetVisible)
           props.setItemsVisible(true)
         }}
-        fullScreen={props.sheetTitle == 'room detail' ? true: false}
+        fullScreen={props.sheetTitle === 'room detail' ? true: false}
         >
-        <div style={{backgroundColor: props.sheetTitle == 'profile' ? 'transparent': '' }}>
+        <div style={{backgroundColor: props.sheetTitle === 'profile' ? 'transparent': '' }}>
           
           {props.sheetTitle === 'new room' ? (
             <Newroom
